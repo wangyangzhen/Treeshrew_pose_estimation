@@ -7,7 +7,7 @@ We present a deep learning approach to achieve markerless pose estimation and re
 * Python 3.8
 
 ## Get start: 
-To run 
+To run example:
 ```bash
 python main.py --repo_path ./Treeshrew_pose_estimation --video_path ./demo_movie --video_path ./demo_movie demo_movie.mp4
 
