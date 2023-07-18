@@ -1,0 +1,72 @@
+    # Project definitions (do not edit)
+Task: treeshew_DLC
+scorer: '20230101'
+date: Jan1
+multianimalproject: false
+identity: false
+
+    # Project path (change when moving around)
+project_path: D:/data/behavior/treeshew/code/project
+
+    # Annotation data set configuration (and individual video cropping parameters)
+video_sets:
+bodyparts:
+- Ear_left
+- Ear_right
+- Nose
+- Center
+- Lateral_left
+- Lateral_right
+- Tail_base
+- Tail_end
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+start: 0
+stop: 1
+numframes2pick: 30
+
+    # Plotting configuration
+skeleton:
+- - Ear_right
+  - Nose
+- - Nose
+  - Center
+- - Tail_base
+  - Tail_end
+- - Ear_left
+  - Nose
+- - Center
+  - Tail_base
+- - Center
+  - Lateral_left
+- - Center
+  - Lateral_right
+skeleton_color: black
+pcutoff: 0.6
+dotsize: 12
+alphavalue: 0.7
+colormap: rainbow
+
+    # Training,Evaluation and Analysis configuration
+TrainingFraction:
+- 0.95
+iteration: 0
+default_net_type: resnet_50
+default_augmenter: default
+snapshotindex: -1
+batch_size: 8
+
+    # Cropping Parameters (for analysis and outlier frame detection)
+cropping: false
+    #if cropping is true for analysis, then set the values here:
+x1: 0
+x2: 640
+y1: 277
+y2: 624
+
+    # Refinement configuration (parameters from annotation dataset configuration also relevant in this stage)
+corner2move2:
+- 50
+- 50
+move2corner: true
+copy_videos: false

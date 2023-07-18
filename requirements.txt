@@ -1,0 +1,5 @@
+deeplabcut
+numba
+opencv-python
+pillow
+matplotlib
