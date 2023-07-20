@@ -11,7 +11,7 @@ To run example:
 ```bash
 python main.py --repo_path ./Treeshrew_pose_estimation --video_path ./demo_movie --video_name demo_movie.mp4
 ```
-The demo video can be easily analysis, and output the pose estimation of tree shrew, including animal's Ear_left, Ear_right, Nose, Center, Lateral_left, Lateral_right,Tail_base,Tail_end.
+The demo video can be easily analyzed, and output the pose estimation of tree shrew, including animal's Ear_left, Ear_right, Nose, Center, Lateral_left, Lateral_right,Tail_base,Tail_end.
 
 ## Behavior annotation: 
 To define the behavior states of animal, please use video_annotation.py. First input custom defined behavior in the top input box, press "next" to save. After definition of behaviors, select the video that you want to label. Select the behavior you want to annotate the frame. Press the Space bar on the keyboard to save
