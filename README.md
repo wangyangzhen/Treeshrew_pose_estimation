@@ -12,3 +12,5 @@ To run example:
 python main.py --repo_path ./Treeshrew_pose_estimation --video_path ./demo_movie --video_name demo_movie.mp4
 
 ```
+## Behavior annotation: 
+To define the behavior states of animal, please use labelling
